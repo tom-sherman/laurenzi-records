@@ -49,10 +49,16 @@
 	var bootstrap = __webpack_require__(1);
 
 	$(window).on('scroll', function () {
+	  var $nav = $('nav');
 	  if (window.scrollY >= 60) {
-	    $('nav').addClass('scrolled');
+	    $nav.addClass('scrolled');
 	  } else if (window.scrollY < 60) {
-	    $('nav').removeClass('scrolled');
+	    $nav.removeClass('scrolled');
+	  }
+
+	  // Collapse nav on scroll
+	  if ($nav.find('.navbar-collapse').hasClass('show')) {
+	    $nav.find('.navbar-toggler').click();
 	  }
 	});
 
