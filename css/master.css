@@ -6073,6 +6073,10 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     text-align: right;
     margin-bottom: 1rem; }
 
+@media (max-width: 1199px) {
+  .hero .display-3 {
+    text-align: left; } }
+
 @media (max-width: 991px) {
   .hero {
     min-height: 0; }
