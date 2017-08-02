@@ -6035,7 +6035,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   position: relative;
   min-height: calc(100vh - 160px);
   margin-bottom: 0;
-  background-image: url(/img/hero-img.jpg); }
+  background-image: url(../img/hero-img.jpg); }
   .hero .scroll-down {
     position: absolute;
     bottom: 0;
