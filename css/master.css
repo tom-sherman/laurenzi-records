@@ -6084,5 +6084,9 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     .hero .cta {
       text-align: center; } }
 
+.bg-brand {
+  background-color: #f4837d;
+  color: #fff; }
+
 .my-4 {
   border-top: 3px solid #fff; }
