@@ -6053,7 +6053,8 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   position: relative;
   min-height: calc(100vh - 160px);
   margin-bottom: 0;
-  background-image: url(../img/hero-img.jpg); }
+  background-image: url(../img/hero-img.jpg);
+  background-size: cover; }
   .hero .scroll-down {
     position: absolute;
     bottom: 0;
@@ -6074,15 +6075,21 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 
 @media (max-width: 991px) {
   .hero {
-    min-height: 0;
-    background-size: cover;
-    background-position: -300px 0; }
+    min-height: 0; }
     .hero .display-3 {
       font-size: 3.5rem; }
     .hero .lead {
       font-size: 1rem; }
     .hero .cta {
       text-align: center; } }
+
+@media (max-width: 767px) {
+  .hero {
+    background-position: -300px 0; } }
+
+@media screen and (orientation: portrait) {
+  .hero {
+    min-height: 0; } }
 
 .bg-brand {
   background-color: #f4837d;
