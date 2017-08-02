@@ -47,7 +47,14 @@
 	'use strict';
 
 	var bootstrap = __webpack_require__(1);
-	console.log('Test');
+
+	$(window).on('scroll', function () {
+	  if (window.scrollY >= 60) {
+	    $('nav').addClass('scrolled');
+	  } else if (window.scrollY < 60) {
+	    $('nav').removeClass('scrolled');
+	  }
+	});
 
 /***/ }),
 /* 1 */

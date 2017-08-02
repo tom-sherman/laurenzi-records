@@ -5987,20 +5987,27 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   .hidden-print {
     display: none !important; } }
 
-.navbar .navbar-nav .nav-link {
-  color: #f4837d;
-  padding-left: 2em;
-  padding-right: 2em;
-  transition: color .2s ease-in-out; }
-  .navbar .navbar-nav .nav-link:hover {
-    color: #8b3036; }
-
-.navbar .navbar-nav .btn {
-  margin-left: 1em; }
+.navbar {
+  background-color: #fff;
+  transition: height .5s ease-out; }
+  .navbar .navbar-nav .nav-link {
+    color: #f4837d;
+    padding-left: 2em;
+    padding-right: 2em;
+    transition: color .2s ease-in-out; }
+    .navbar .navbar-nav .nav-link:hover {
+      color: #8b3036; }
+  .navbar .navbar-nav .btn {
+    margin-left: 1em; }
 
 @media (min-width: 768px) {
   .navbar {
-    height: 160px; } }
+    height: 160px; }
+    .navbar.scrolled {
+      height: 56px;
+      -webkit-box-shadow: -1px 2px 5px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: -1px 2px 5px rgba(0, 0, 0, 0.1);
+      box-shadow: -1px 2px 5px rgba(0, 0, 0, 0.1); } }
 
 @media (max-width: 991px) {
   .container {
